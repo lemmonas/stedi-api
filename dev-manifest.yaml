@@ -31,7 +31,7 @@ spec:
 # The name of the container is specified below      
         - name: dev-stedi-andra
 # The image is a prebuilt file containing the operating system        
-          image: gcr.io/cubs-consulting/stedi:latest
+          image: us-docker.pkg.dev/unstable-unicorns-389016/andra-api/stedi-api:latest
           env:
             - name: REDIS_PASSWORD
               valueFrom:
@@ -49,7 +49,7 @@ spec:
             - name: TWILIO_AUTH_TOKEN
               valueFrom:
                 secretKeyRef:
-                  name: twilio-dev
+                  name: andra-twilio-dev
                   key: twilio_token
 # The ports is a list of tcp ports the pod listens on
           ports:
