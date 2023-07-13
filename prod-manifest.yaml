@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: prod-stedi-andra
-          image: gcr.io/cubs-consulting/stedi
+          image: us-docker.pkg.dev/unstable-unicorns-389016/andra-api/stedi-api:latest
           env:
             - name: REDIS_PASSWORD
               valueFrom:
